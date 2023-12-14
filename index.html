@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federico Magri Developer</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#" class="logo_start">/</a>
+                    <a href="#" class="logo_acent">FM</a>
+                    <a href="#" class="logo_final">.py</a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="lightButton"> ☼ </button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="circle-container">
+            <img src="img/profile_1.jpg" alt="Profile picture" class="circle-image">
+        </div>
+        <div class="presentation">
+            <h1 class="ppl-presentation">Hi! I'm Federico Magri</h1>
+            <h4 class="sub-presentation">Software developer & future engineer</h4>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <div class="container">
+            <div class="carta" id="carta_1_0">
+                <h3>Who am I?</h3>
+                <p>
+                    I'm Federico Magri, graduated 
+                    electronic technician and 
+                    <mark>computer enginnering student</mark>
+                    from Buenos Aires, Argentina. 
+                    I love collaborating and 
+                    working as a team as I have 
+                    excellent communication 
+                    skills and great ambitions, that's why 
+                    I aspire to enter a place where 
+                    I can enhance my skills from 
+                    minute 0, being able to start 
+                    a professional career that points 
+                    to something big.
+                </p>
+            </div>
+            <div class="carta" id="carta_1_1">
+                <h3>Experience</h3>
+                <p>
+                </p>
+                <button id="downloadButton">Download CV</button>
+            </div>
+            <div class="carta" id="carta_1_2">
+                <h3>Studies</h3>
+                <p>
+                    As I mentioned before, I am an electronic technician
+                    graduated from the La Salle Florida
+                    Institute in the year 2021. Thanks to
+                    my outstanding performance during those
+                    7 years, I obtained a scholarship to
+                    continue my grade studies at the
+                    prestigious <mark>Buenos Aires Technological
+                    Institute (ITBA)</mark>, pursuing a computer
+                    enginnering degree. I am currently in the
+                    second year of the career, and I aspire to acces
+                    assistantships in the next months to further
+                    enhance my knowledge.
+                </p>
+                <div class="buttons-container">
+                    <button class="buttonInCont" id="cambridgeButton"></button>
+                    <button class="buttonInCont" id="itbaButton"></button>
+                    <script>
+                        document.getElementById("itbaButton").addEventListener("click", function() {
+                            window.open("https://www.itba.edu.ar/", "_blank");
+                        });
+                    </script>
+                </div>
+            </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="container">
+            <div class="python-card" id="pythonCard">
+                <div class="image-wrapper" id="imageWrapper">
+                    <img id="pyimg" src="img/python-icon.jpg" alt="python-icon">
+                </div>
+                <div class="info-container" id="infoContainer">
+                    <h3>Python</h3>
+                    <p class="perfect">» Complex Algorithms (Back End)</p>
+                    <p class="perfect">» PyGame</p>
+                    <p class="perfect">» PyMongo</p>
+                    <p class="perfect">» Debugging</p>
+                    <p class="good">» Data analytics</p>
+                    <p class="regular">» Artificial inteligence</p>
+                    <p class="regular">» Flask</p>
+                    <!--Otras imagenes/Dividir en containers-->
+                </div>
+            </div>
+            <div class="c-card" id="cCard">
+                <div class="image-wrapper" id="imageWrapper">
+                    <img id="cimg" src="img/c-icon.jpg" alt="c-icon">
+                </div>
+                <div class="info-container" id="infoContainer">
+                    <h3>C Programming</h3>
+                    <p class="perfect">» Complex Algorithms & efficiency (Back End)</p>
+                    <p class="perfect">» Memory working with pointers</p>
+                    <p class="perfect">» Crossplatforming & debuging</p>
+                    <!--Otras imagenes/Dividir en containers-->
+                </div>
+            </div>
+            <div class="bash-card" id="bashCard">
+                <div class="image-wrapper" id="imageWrapper">
+                    <img id="bashimg" src="img/bash-icon.jpg" alt="bash-icon">
+                </div>
+                <div class="info-container" id="infoContainer">
+                    <h3>Linux & Bash scripting</h3>
+                    <p class="perfect">» File manipulation scripts</p>
+                    <p class="perfect">» Linux sistem administration</p>
+                    <p class="good">» SSH Server setup</p>
+                    <!--Otras imagenes/Dividir en containers-->
+                </div>
+            </div>
+            <div class="js-card" id="jsCard">
+                <div class="image-wrapper" id="imageWrapper">
+                    <img id="jsimg" src="img/js-icon.jpg" alt="js-icon">
+                </div>
+                <div class="info-container" id="infoContainer">
+                    <h3>JavaScript</h3>
+                    <p class="good">» MongoDB</p>
+                    <p class="regular">» Web development (css & html)</p>
+                    <p class="regular">» Complex Algorithms & efficiency (Back End)</p>
+                    <!--Otras imagenes/Dividir en containers-->
+                </div>
+            </div>
+            <div class="electronics-card" id="electronicsCard">
+                <div class="image-wrapper" id="imageWrapper">
+                    <img id="elecimg" src="img/electronics-icon.jpg" alt="electronics-icon">
+                </div>
+                <div class="info-container" id="infoContainer">
+                    <h3>electronics</h3>
+                    <p class="perfect">» Arduino</p>
+                    <p class="good">» Circuit design with Altium</p>
+                    <p class="good">» Manual production of electronic boards (welding, connection, programming, etc.)</p>
+                    <p class="good">» Quality control & performance</p>
+                    <p class="good">» 3D Modeling with Solid Works</p>
+                    <p class="regular">» PLC Simulating</p>
+                    <!--Otras imagenes/Dividir en containers-->
+                </div>
+            </div>
+    </section>
+    <div class="footer">
+        <h2>Contact</h2>
+        <section id="contact">
+            <div class="contact-buttons">
+                <button id="wpp-button" class="contact-button"></button>
+                <script>
+                    const whatsappButton = document.getElementById("wpp-button");
+                    
+                    const phoneNumber = "+5401125648009";
+                    const message = "Hello Fede! I saw your web page.";
+                    
+                    // Crear el enlace de WhatsApp
+                    whatsappButton.addEventListener("click", () => {
+                        const encodedMessage = encodeURIComponent(message);
+                        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+                        window.open(whatsappUrl, "_blank");
+                    });
+                    </script>
+                <a href="mailto:fedemagri23@gmail.com?subject=Asunto%20del%20correo&body=Hola,%20quiero%20contactarte">
+                    <button id="mail-button" class="contact-button"></button>
+                </a>
+                <button id="linkedin-button" class="contact-button"></button>
+                <script>
+                    document.getElementById("linkedin-button").addEventListener("click", function() {
+                        window.open("https://www.linkedin.com/in/federico-magri-342581264/", "_blank");
+                    });
+                </script>
+            </div>
+        </section>
+    </div>
+</body>
